@@ -24,3 +24,24 @@ WELCOME = pygame.image.load("pictures/welcome.png").convert_alpha()
 
 #Screen (Game-Over)
 GAMEOVER = pygame.image.load("pictures/game_over.png").convert_alpha()
+
+#Screen (You win)
+WIN = pygame.image.load("pictures/win.png").convert_alpha()
+
+#Game background
+BACKGROUND = pygame.image.load("pictures/background.jpg").convert()
+
+#kind of sprite
+WALL = pygame.image.load("pictures/wall.png").convert_alpha()
+ARRIVAL = pygame.image.load("pictures/guardian.png").convert_alpha()
+
+#kind of tools
+TUBE = pygame.image.load("pictures/tube.png").convert_alpha()
+ETHER = pygame.image.load("pictures/ether.png").convert_alpha()
+SYRINGE = pygame.image.load("pictures/syringe.png").convert_alpha()
+
+#Display MacGyver
+MG = pygame.image.load("pictures/MacGyver.png").convert_alpha()
+
+#map variable
+FILE = ""
