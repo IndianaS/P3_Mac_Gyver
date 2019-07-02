@@ -44,4 +44,4 @@ SYRINGE = pygame.image.load("pictures/syringe.png").convert_alpha()
 MG = pygame.image.load("pictures/MacGyver.png").convert_alpha()
 
 #map variable
-FILE = ""
+FILE = "map/N1.txt"
