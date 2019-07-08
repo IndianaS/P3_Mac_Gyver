@@ -53,3 +53,6 @@ class Map():
     def __contains__(self, position):
     	return position in self.passages
     
+
+    def is_exit_position(self, position):
+    	return position == self.exit

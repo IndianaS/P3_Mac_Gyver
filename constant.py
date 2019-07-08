@@ -35,7 +35,7 @@ BACKGROUND = pygame.image.load("pictures/background.jpg").convert()
 
 #kind of sprite
 WALL = pygame.image.load("pictures/wall.png").convert_alpha()
-ARRIVAL = pygame.image.load("pictures/guardian.png").convert_alpha()
+EXIT = pygame.image.load("pictures/guardian.png").convert_alpha()
 
 #kind of tools
 TUBE = pygame.image.load("pictures/tube.png").convert_alpha()
@@ -52,4 +52,4 @@ WALL_CHAR = 'w'
 EXIT_CHAR = 'a'
 
 #map variable
-FILE = "map/N1.txt"
+FILE = "map/level1.txt"

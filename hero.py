@@ -1,8 +1,6 @@
 #!/usr/bin/python3.7
 # -*-coding:utf-8 -
 
-import pygame
-
 class Hero:
 	
 	def __init__(self):
@@ -15,5 +13,6 @@ class Hero:
 		if new_position in self.map:
 			self.position = new_position
 
-		if 
-				
+		    if self.map.is_exit_position(position):
+		        #print ("You are the Best!!!") 
+				#if,elif pour valider les trois objets???
