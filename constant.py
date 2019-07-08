@@ -12,6 +12,8 @@ NB_SPRITE = 15
 SPRITE_SIZE = 30
 SCREEN_SIZE = ((NB_SPRITE + 2) * SPRITE_SIZE, (NB_SPRITE + 2) * SPRITE_SIZE)
 
+VELOCITY = 10 #PX
+
 #Display video of window game
 window = pygame.display.set_mode(SCREEN_SIZE)
 TITLE_WINDOW = "help MacGyver!!"
@@ -42,6 +44,12 @@ SYRINGE = pygame.image.load("pictures/syringe.png").convert_alpha()
 
 #Display MacGyver
 MG = pygame.image.load("pictures/MacGyver.png").convert_alpha()
+
+#map skeleton
+START_CHAR = 'd'
+PASSAGE_CHAR = '0'
+WALL_CHAR = 'w'
+EXIT_CHAR = 'a'
 
 #map variable
 FILE = "map/N1.txt"

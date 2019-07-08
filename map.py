@@ -3,18 +3,23 @@
 
 
 
-
-
 class Map():
-	#class object Map which define the labyrinth.
-    #It has one attribut : an empty grid.
-    #and takes as parameter the file.txt which contains the map.
-    #This class has two methods: one to generate the structure : a list of list
-    #and one to display the grid over the pygame window.
+	
 
-    def __init__(self, file):
-    	self.file = file
-    	self.grid = []
+    def __init__(self):
+    	self.start = None
+    	self.exit = None
+    	self.passages = []
+    	self.wall = []
+    	self.items = []
+    	self.hero = None
 
-    def generate(self):
-    	frame = []
+    def load_from_file(self, filename):
+    	pass
+
+    def add_hero(self, hero):
+    	pass
+
+    def add(self, positionable):
+    	pass
+    
