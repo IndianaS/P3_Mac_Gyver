@@ -8,34 +8,36 @@ from constant import*
 
 class MacGyver():
 
-	def __init__(self, position, item, move):
+	def __init__(self, position, loot_item, move):
 		#Current position MacGyver
 		self.position = ()
 		#Loot items
-		self.item = []
+		self.loot_item = []
 		#Move MacGyver
 		self.move = move ()
 
 
 	def position(display):
+		pass
  
 
 
 
-	def item(self):
+	def loot_item(self):
+		pass
 
 
 
      #Move MacGyver
 	def move(self):
 		for event in pygame.event.get(pg.KEYDOWN):
-			if event.key == pg.K_UP:
+			if event.key == pygame.K_UP:
 				self.rect.move_ip(0, -settings.VELOCITY)
-			elif event.key == pg.K_DOWN:
+			elif event.key == pygame.K_DOWN:
 				self.rect.move_ip(0, settings.VELOCITY)
-			elif event.key == pg.K_LEFT:
+			elif event.key == pygame.K_LEFT:
 				self.rect.move_ip(-settings.VELOCITY, 0)
-			elif event.key == pg.K_RIGHT:
+			elif event.key == pygame.K_RIGHT:
 				self.rect.move_ip(settings.VELOCITY, 0)
 
 
