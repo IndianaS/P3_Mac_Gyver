@@ -1,5 +1,6 @@
 #!/usr/bin/python3.7
 # -*-coding:utf-8 -
+from config import settings
 
 
 
@@ -13,13 +14,42 @@ class Map():
     	self.wall = []
     	self.items = []
     	self.hero = None
+    	self.width = None
+    	self.height = None
 
     def load_from_file(self, filename):
-    	pass
+    	#charge le contenu du fichier filename dans les listes
+    	with open(filename) as level:
+    		for n_line in enumerate(level):
+    			for n_char, char in line:
+    				position = Position(n_char, n_line)
+    				if char == settings.START_CHAR:
+    					self.passages.append(position)
+    					self.start = position
+    				elif char == settings.EXIT_CHAR:
+    					self.passages.append(position)
+    					self.exit = position
+    				elif char == settings.PASSAGE_CHAR:
+    					self.passages.append(position)
+    				else:
+    					self.walls.append(position)
+
+    		self.height = n_line + 1
+    		self.width = n_char + 1
+
+
 
     def add_hero(self, hero):
-    	pass
+    	#Positionne le hero sur la Map
+    	self.hero = hero
+    	self.hero.position = self.start
+    	self.hero.Map = self
+
 
     def add(self, positionable):
+    	#Comment positionner des objets aleatoirement??
     	pass
+
+    def __contains__(self, position):
+    	return position in self.passages
     

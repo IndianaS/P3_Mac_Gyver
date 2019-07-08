@@ -7,8 +7,13 @@ class Hero:
 	
 	def __init__(self):
 		self.position = None
-		self.labyrinth = None
+		self.map = None
 	
 	def move(self, direction):
-		pass
+		#Calcules la nouvelle position du hero
+		new_position = self.position + direction
+		if new_position in self.map:
+			self.position = new_position
+
+		if 
 				
