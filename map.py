@@ -47,7 +47,7 @@ class Map():
 
 
     def add(self, positionable):
-    	#Comment positionner des objets aleatoirement??
+    	#Comment positionner des objets ?
     	pass
 
     def __contains__(self, position):

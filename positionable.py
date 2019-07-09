@@ -3,6 +3,6 @@
 
 
 class Positionable:
-
+    #comment ajuter les Objets aleatoire????
 	def __init__(self):
 		self.position = None

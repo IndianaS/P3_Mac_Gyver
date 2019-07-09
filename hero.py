@@ -14,5 +14,6 @@ class Hero:
 			self.position = new_position
 
 		    if self.map.is_exit_position(position):
+		        pass
 		        #print ("You are the Best!!!") 
 				#if,elif pour valider les trois objets???
