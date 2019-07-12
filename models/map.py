@@ -1,10 +1,9 @@
 #!/usr/bin/python3.7
 # -*-coding:utf-8 -
 from config import settings
+from.position import Position
 
-
-
-class Map():
+class Map:
 	
 
     def __init__(self):
@@ -21,7 +20,7 @@ class Map():
     	#charge le contenu du fichier filename dans les listes
     	with open(filename) as level:
     		for n_line in enumerate(level):
-    			for n_char, char in line:
+				for n_char, char in enumerate(line):
     				position = Position(n_char, n_line)
     				if char == settings.START_CHAR:
     					self.passages.append(position)
