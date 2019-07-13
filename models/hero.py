@@ -6,6 +6,7 @@ class Hero:
 	def __init__(self):
 		self.position = None
 		self.map = None
+		self.item = None #Ou self.positionable = None
 	
 	def move(self, direction):
 		#Calcules la nouvelle position du hero
@@ -14,6 +15,9 @@ class Hero:
 			self.position = new_position
 
 		    if self.map.is_exit_position(position):
-		        pass
+				pass
 		        #print ("You are the Best!!!") 
 				#if,elif pour valider les trois objets???
+
+    def catch(self, item):#Prendre les objets
+		pass              #Ou def catch(self, positionable)
