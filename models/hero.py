@@ -19,5 +19,5 @@ class Hero:
 		        #print ("You are the Best!!!") 
 				#if,elif pour valider les trois objets???
 
-    def catch(self, item):#Prendre les objets
-		pass              #Ou def catch(self, positionable)
+    def loot_items(self, positionable):#Prendre les objets
+		pass              

@@ -11,15 +11,15 @@ class Map:
 		self.exit = None
 		self.passages = []
 		self.wall = []
-		self.items = []
+		self.positionable = []
 		self.hero = None
 		self.width = None
 		self.height = None
 	def load_from_file(self, filename):
     	#charge le contenu du fichier filename dans les listes
 		with open(filename) as level:
-			for n_line in enumerate(level):
-				for n_char, char in enumerate(n_line):
+			for n_line, line in enumerate(level):
+				for n_char, char in enumerate(line):
 					position = Position(n_char, n_line)
 					if char == settings.START_CHAR:
 						self.passages.append(position)
@@ -32,7 +32,7 @@ class Map:
 					else:
 						self.wall.append(position)
 
-			self.height = n_line + 1
+			self.height = n_line + 1# ici
 			self.width = n_char + 1
 
 
