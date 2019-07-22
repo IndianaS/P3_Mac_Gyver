@@ -1,5 +1,4 @@
 import pygame as pygame
-
 from config import settings
 
 class MapSprite(pg.sprite.Sprite):
@@ -8,3 +7,7 @@ class MapSprite(pg.sprite.Sprite):
 		super().__init__()
 		self.image = pg.image.load(settings.BACKGROUND).convert()
 		self.rect = self.image.get_rect()
+
+
+class MapViews:
+	pass

@@ -1,5 +1,4 @@
 import pygame
-
 from config import settings
 
 class HeroSprite(pg.sprite.Sprite):

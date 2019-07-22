@@ -2,7 +2,7 @@
 # -*-coding:utf-8 -
 
 
-class Positionable:
+class Items:
     #comment ajouter les Objets aleatoire????
 	def __init__(self):
 		self.position = None

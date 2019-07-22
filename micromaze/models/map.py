@@ -11,10 +11,11 @@ class Map:
 		self.exit = None
 		self.passages = []
 		self.wall = []
-		self.positionable = []
+		self.items = []
 		self.hero = None
 		self.width = None
 		self.height = None
+	
 	def load_from_file(self, filename):
     	#charge le contenu du fichier filename dans les listes
 		with open(filename) as level:
@@ -32,7 +33,7 @@ class Map:
 					else:
 						self.wall.append(position)
 
-			self.height = n_line + 1# ici
+			self.height = n_line + 1
 			self.width = n_char + 1
 
 
@@ -41,12 +42,8 @@ class Map:
     	#Positionne le hero sur la Map
 		self.hero = hero
 		self.hero.position = self.start
-		self.hero.Map = self
+		self.hero.map = self
 
-
-	def add(self, positionable):
-    	#Comment positionner des objets ?
-		pass
 
 	def __contains__(self, position):
 		return position in self.passages
