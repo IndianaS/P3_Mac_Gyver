@@ -1,6 +1,7 @@
 #!/usr/bin/python3.7
 # -*-coding:utf-8 -
 from.map import Map
+from.position import right
 
 class Hero:
 	
@@ -46,3 +47,21 @@ up = Motion(0, -1)
 down = Motion(0, 1)
 left = Motion(-1, 0)
 right = Motion(1, 0)
+
+#Test position du hero
+def main():
+    hero = Hero()
+    map = Map()
+    map.load_from_file('map/level.txt')
+    map.add_hero(hero)
+    
+    print(hero.position)
+    hero.move(right)
+    hero.move(right)
+    hero.move(right)
+    hero.move(right)
+    print(hero.position)
+              
+
+if __name__ == "__main__":
+	main()
