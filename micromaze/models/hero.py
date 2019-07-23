@@ -48,7 +48,7 @@ down = Motion(0, 1)
 left = Motion(-1, 0)
 right = Motion(1, 0)
 
-#Test position du hero
+#Test position du hero pour test (python -m micromaze.models.hero)
 def main():
     hero = Hero()
     map = Map()

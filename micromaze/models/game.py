@@ -19,7 +19,7 @@ class Game:
         pass
     
 
-#Partie de Test du jeu
+#Partie de Test du jeu test les passages etc... pour test (python -m micromaze.models.game)
 def main():
     game = Game()
     print(game.map.passages)

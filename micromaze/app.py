@@ -5,7 +5,7 @@ from config import settings
 from.models.game import Game
 from.controllers.Keyboard import KeyboardController
 from.views.map import MapView
-from.events import tick 
+from.events import tick #Test les events
 
 class Application:
 	#Représente le jeu lui-meme
@@ -28,7 +28,7 @@ class Application:
 		#Boucle principale du jeu
 		while self.running:
 			self.clock.tick(settings.FPS)
-			self.tick_event.send()	
+			self.tick_event.send()#Test les events	
 
 def main():
 	#point d entree principale du jeu 
