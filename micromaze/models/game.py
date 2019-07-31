@@ -11,6 +11,7 @@ class Game:
         self.map.load_from_file('map/level.txt')
         self.mg = Hero()
         self.map.add_hero(self.mg)
+        self.map.add_items.position()# a verifier pour la positon des items sur la map
 
     def start(self):
         pass

@@ -2,6 +2,8 @@
 # -*-coding:utf-8 -
 from config import settings
 from.position import Position
+import random
+
 
 class Map:
 	
@@ -35,8 +37,10 @@ class Map:
 
 			self.height = n_line + 1
 			self.width = n_char + 1
-
-
+     
+	def get_random_position(self):
+		self.random_position = random.sample(self.passages, 3)
+     
 
 	def add_hero(self, hero):
     	#Positionne le hero sur la Map
@@ -44,10 +48,9 @@ class Map:
 		self.hero.position = self.start
 		self.hero.map = self
 
-
 	def __contains__(self, position):
 		return position in self.passages
     
 
 	def is_exit_position(self, position):
-		return position == self.exit
+		return position == self.exit   

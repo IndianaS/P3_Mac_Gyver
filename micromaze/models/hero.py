@@ -20,7 +20,7 @@ class Hero:
 		        #print ("You are the Best!!!") 
 				#if,elif pour valider les trois objets???
 
-	def loot_items(self, item):#Prendre les objets
+	def loot_items(self, items):#Prendre les objets
 		pass
 
 class Position:
